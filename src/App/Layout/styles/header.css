@@ -1,0 +1,51 @@
+<<<<<<< HEAD
+header {
+  grid-area: header;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 3rem;
+  box-shadow: 0px 1px 20px 0px #c8cbd1;
+}
+header > a:first-of-type {
+  text-decoration: none;
+}
+header.header-title {
+  color: var(--color-grey);
+  font-weight: normal;
+}
+
+header .logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+=======
+header {
+  grid-area: header;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 3rem;
+  box-shadow: 0px 1px 9px 0px var(--color-grey);
+}
+header > a:first-of-type {
+  text-decoration: none;
+}
+header.header-title {
+  color: var(--color-grey);
+  font-weight: normal;
+}
+
+header .logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+>>>>>>> cb1f00eac004749a93ef0ee67a825d9663c94f75

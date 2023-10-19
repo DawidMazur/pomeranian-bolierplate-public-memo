@@ -1,0 +1,91 @@
+<<<<<<< HEAD
+import { NavLink, useLocation } from 'react-router-dom';
+
+import './styles/aside.css';
+
+import { HouseIcon } from '../Components/Icons/HouseIcon';
+import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
+import { EditIcon } from '../Components/Icons/EditIcon';
+import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { ElementIcon } from '../Components/Icons/ElementIcon';
+import { BookIcon } from '../Components/Icons/BookIcon';
+import { MessagesIcon } from '../Components/Icons/MessagesIcon';
+
+export function AppAside() {
+  const location = useLocation();
+
+  return (
+    <aside>
+      <nav>
+        <ul>
+          <li
+            className={`aside-row ${
+              location.pathname === '/dashboard' ? 'active' : ''
+            }`}
+          >
+            <HouseIcon />
+            <NavLink to="dashboard">Dashboard</NavLink>
+          </li>
+          <li className="aside-row">
+            <PersonalCardIcon />
+            <NavLink to="cv">Moje CV</NavLink>
+          </li>
+          <li className="aside-row">
+            <EditIcon />
+            <NavLink to="exercises">Ćwiczenia</NavLink>
+          </li>
+          <li className="aside-row">
+            <CalendarIcon />
+            <NavLink to="calendar">Kalendarz</NavLink>
+          </li>
+          <li className="aside-row">
+            <ElementIcon />
+            <NavLink to="blocks">Bloki</NavLink>
+          </li>
+          <li className="aside-row">
+            <BookIcon />
+            <NavLink to="blog">Blog</NavLink>
+          </li>
+          <li className="aside-row">
+            <MessagesIcon />
+            <NavLink to="faq">FAQ</NavLink>
+          </li>
+          <hr />
+        </ul>
+      </nav>
+      <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
+    </aside>
+  );
+}
+=======
+import { NavLink } from 'react-router-dom';
+
+import './styles/aside.css';
+
+export function AppAside() {
+  return (
+    <aside>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="dashboard">Dashboard</NavLink>
+          </li>
+          <li>
+            <NavLink to="blocks">Bloki</NavLink>
+          </li>
+          <li>
+            <NavLink to="exercises">Ćwiczenia</NavLink>
+          </li>
+          <li>
+            <NavLink to="blog">Blog</NavLink>
+          </li>
+          <li>
+            <NavLink to="faq">Faq</NavLink>
+          </li>
+        </ul>
+      </nav>
+      <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
+    </aside>
+  );
+}
+>>>>>>> cb1f00eac004749a93ef0ee67a825d9663c94f75

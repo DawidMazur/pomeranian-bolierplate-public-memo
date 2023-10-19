@@ -1,0 +1,22 @@
+.square {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%) scale(1);
+  width: 10px;
+  height: 10px;
+  background-color: hotpink;
+  animation-name: resize;
+}
+
+@keyframes resize {
+  0% {
+    transform: translate(-50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%) scale(10);
+  }
+  100% {
+    transform: translate(-50%) scale(1);
+  }
+}

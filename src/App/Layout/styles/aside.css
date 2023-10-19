@@ -1,0 +1,79 @@
+<<<<<<< HEAD
+aside {
+  border-right: 1px solid var(--color-grey);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+aside ul {
+  /* Nadpisanie domyślnych styli przeglądarki */
+  padding-inline-start: 1rem;
+  list-style: none;
+}
+
+aside li {
+  line-height: 2rem;
+}
+
+.aside-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+aside li a {
+  color: var(--color-black);
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 16px;
+}
+aside li a:hover {
+  color: #fe3756;
+}
+
+aside a.active {
+  color: #fe3756;
+}
+
+aside svg:has(a.active) path {
+  stroke: #fe3756;
+}
+=======
+aside {
+  border-right: 1px solid var(--color-grey);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+aside ul {
+  /* Nadpisanie domyślnych styli przeglądarki */
+  padding-inline-start: 1rem;
+}
+
+aside li {
+  line-height: 2rem;
+}
+
+.aside-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+aside li a {
+  display: block;
+  padding: 0.5rem;
+}
+
+aside a.active {
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+}
+>>>>>>> cb1f00eac004749a93ef0ee67a825d9663c94f75
