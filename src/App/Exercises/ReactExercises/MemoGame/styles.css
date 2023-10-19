@@ -76,3 +76,27 @@ div.content {
   justify-content: center;
   align-items: center;
 }
+
+.onecard span {
+  opacity: 0;
+
+  font-size: 100px;
+  font-weight: 500;
+}
+
+.onecard.done span,
+.onecard.clicked span {
+  opacity: 1;
+}
+
+.wrong {
+  pointer-events: none;
+}
+
+.wrong .onecard.clicked {
+  background-color: #e12b1b;
+}
+
+.current {
+  background-color: #e12b1b;
+}
